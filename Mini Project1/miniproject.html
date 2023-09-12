@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Kerala</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="miniproject.css">
+    <link rel="icon" type="image/x-icon" href="kerala pic/WhatsApp Image 2023-08-30 at 10.29.38 PM.jpeg">
+
+    
+
+</head>
+<body>
+  
+
+    <!-- ..///Navbar -->
+
+  
+
+    
+    
+    <nav class="navbar navbar-expand-lg  fw-bold fs-5 ">
+      
+
+        <div class="container-fluid">
+          
+          <a href="miniproject.html"><img src="kerala pic/Logo 4.png" style="width: 100px; height: 60px;" class="ms-5"></a>
+          
+          <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation " id="btn" >
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             
+              <li class="nav-item">
+                <a class="nav-link active text-white ms-5" aria-current="page" href="#"><span style="font-family:monospace;">Home</span></a>
+              </li>
+              
+              <li class="nav-item dropdown ms-5 ">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span style="font-family:monospace;">Tour Packages</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../top city wise packages/wayanad.html" target="_blank">Wayanad Tour Packages</a></li>
+                  <li><a class="dropdown-item" href="../top city wise packages/thekkadi.html" target="_blank">Thekkady Tour Packages</a></li>
+                  <li><a class="dropdown-item" href="../top city wise packages/cochin.html" target="_blank">Cochin Tour Packages</a></li>
+                  <li><a class="dropdown-item" href="../top city wise packages/munnar.html" target="_blank">Munnar Tour Packages</a></li>
+                  <li><a class="dropdown-item" href="../top city wise packages/kumarakam.html" target="_blank">Kumarakam Tour Packages</a></li>
+                  <li><a class="dropdown-item" href="../top city wise packages/vagamon.html" target="_blank">Vagamon Tour Packages</a></li>
+                  <li><a class="dropdown-item" href="../top city wise packages/kovalam.html" target="_blank">Kovalam Tour Packages</a></li>
+                  <li><a class="dropdown-item" href="../top city wise packages/trivandrum.html" target="_blank">Trivandrum Tour Packages</a></li>
+
+
+
+
+
+                </ul>
+              </li>
+
+               <li class="nav-item ms-5">
+                <a class="nav-link text-white" href="mustvisit_place.html" target="_blank"><span style="font-family:monospace;">Must Visit Places</span></a>
+              </li>
+
+              <li class="nav-item ms-5">
+                <a class="nav-link text-white" href="honeymoonpackage.html" target="_blank"><span style="font-family:monospace;">Honeymoon Packages</span></a>
+              </li>
+
+              
+              
+            </ul>
+
+            <!-- Button trigger modal -->
+
+            
+            
+            <button type="button" class="btn btn-primary me-5 con" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: rgb(6, 91, 27); border-color: black; font-size: 20px;" id="con">
+               CONTACT
+            </button>
+
+          <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title fs-7 " id="staticBackdropLabel"><span style="font-family: monospace; color:blue; font-size: 30px;">CONTACT US</span></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form onsubmit="return contact()"   action="miniproject.html">
+
+
+                      <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name1">
+                        <!-- <label id="text_a" style="color: red; visibility: hidden;">Invalid</label> -->
+
+                      </div>
+                      <div class="mb-3">
+                        <label for="Email1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email1" aria-describedby="emailHelp">
+                        <!-- <label id="text_b" style="color: red; visibility: hidden;">Invalid</label> -->
+
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+
+                        <input type="number" class="form-control" id="number1">
+                        <!-- <label id="text_c" style="color: red; visibility: hidden;">Invalid</label> -->
+
+                      </div>
+
+                      <label for="message" class="form-label">Your Message</label>
+
+                      <div class="form-floating ">
+                                                   
+                        <textarea id="message1" class="form-control mb-2" style=" height: 40px;" placeholder="Additional Information:"></textarea>
+                        <!-- <label id="text_d" style="color: red; visibility: hidden;">Invalid</label> -->
+
+                      </div>
+                     
+                      <button type="submit" class="btn btn-primary " onclick="contact()">Submit</button>
+                      <!-- <input type="submit" value="submit" id="btn" class=" bg-primary"> -->
+
+                    </form>
+
+
+                    <h5 class="mt-4">TELEPHONIC CONTACTS</h5>
+
+                    <h6>
+                      Tel: +91-7606140809<br>
+                      Tel: +91-6848103025</h6>
+
+                      <h5>Email Contact:</h5>
+                      <h6>explorekerala@gmail.com</h6>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          
+         
+
+
+           
+          
+          </div>
+        </div>
+      </nav>
+    <!-- </div> -->
+
+      <!-- //..........Carousel.. -->
+
+      
+
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1500">
+            <img src="kerala pic/nature.jpg" class="d-block w-100" alt="nature pic">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="font-size: 100px; padding-bottom: 110px; color: rgb(242, 211, 211); font-family: monospace;">Explore the hidden treasures.</h5>
+
+              <p style="font-size: 40px; padding-bottom: 20px; color: rgb(242, 211, 211);">KERALA</p>
+           
+          </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1500">
+            <img src="kerala pic/one.jpg" class="d-block w-100" alt="nature pic">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="font-size: 100px; padding-bottom: 110px; color: rgb(242, 211, 211); font-family: monospace;"> Nature Meets Culture.</h5>
+              <p style="font-size: 40px; padding-bottom: 20px; color: rgb(242, 211, 211);">KERALA</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1500">
+            <img src="kerala pic/deepam.jpg" class="d-block w-100" alt="deepam pic">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 style="font-size: 100px; padding-bottom: 110px; color: rgb(242, 211, 211); font-family: monospace;">God's Own Country.</h1>
+
+              <p style="font-size: 40px; padding-bottom: 20px; color: rgb(242, 211, 211); ">KERALA</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+        
+         
+      
+<div class="container-fluid">
+     <!-- ///..........About Kerala small explanation -->
+
+      <!-- //full container -->
+    
+      <div class=" text-center pt-5 pb-5 text-white ">
+        
+        <h1 class="fw-bold text-decoration-underline  pb-4" style="color: rgb(71, 219, 26);">About Kerala</h1>
+        <p class="fs-5">Kerala, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Sea shoreline. It's known for its palm-lined beaches and backwaters, a network of canals. Inland are the Western Ghats, mountains whose slopes support tea, coffee and spice plantations as well as wildlife. National parks like Eravikulam and Periyar, plus Wayanad and other sanctuaries, are home to elephants, langur monkeys and tigers.Named as one of the ten paradises of the world by National Geographic Traveler, Kerala is famous especially for its ecotourism initiatives and beautiful backwaters. Its unique culture and traditions, coupled with its varied demography, have made Kerala one of the most popular tourist destinations in the world.</p>
+      
+      </div>
+
+      <!-- //..........cards about each pachages -->
+
+      <!-- //...first cards -->
+
+
+      
+
+        <div class="row p-3">
+
+          <div class="col-sm-3 ">
+                  <div class="card border-3 border-success " >
+                    <img src="kerala pic/cards/Alleppey.jpg" class="card-img-top  " alt="alappuzha pic">
+                    <div class="card-body bg-dark">
+                      <h5 class="card-title fw-bold text-white"> Munnar-Thekkady-Alleppey Tour</h5>
+                      <p class="card-text text-primary">04 Nights 05 Days</p>
+                      <p class="card-text text-white">Starting @ Rs 8,999/-</p>
+                      <a href="form.html" class="btn btn-warning fs-5 fw-bold"  target="_blank">Book Now</a>
+
+                    </div>
+                  </div>
+          </div>
+
+          <div class="col-sm-3">
+              <div class="card border-3 border-success " >
+                <img src="kerala pic/cards/sunset-at-tata-tea-gardens.jpg" class="card-img-top" alt="places pic">
+                  <div class="card-body bg-dark">
+                    <h5 class="card-title fw-bold text-white">Cochi-Thekkady-Aleppy</h5>
+                    <p class="card-text text-primary">5-night 6-days</p>
+                    <p class="card-text text-white">Starting @ Rs 10,999/-</p>
+                    <a href="form.html" class="btn btn-warning fs-5 fw-bold"  target="_blank">Book Now</a>
+
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-3 ">
+                <div class="card border-3 border-success ">
+                  <img src="kerala pic/cards/thoni.jpg" class="card-img-top" alt="munnar">
+                      <div class="card-body bg-dark">
+                        <h5 class="card-title fw-bold text-white">Munnar-Thekkady-Alleppey</h5>
+                        <p class="card-text text-primary">6-night 7-days</p>
+                        <p class="card-text text-white">Starting @ Rs 12,999/-</p>
+                        <a href="form.html" class="btn btn-warning fs-5 fw-bold"  target="_blank">Book Now</a>
+
+                      </div>
+                </div>
+          </div>
+
+            <div class="col-sm-3 ">
+                    <div class="card border-3 border-success ">
+                      <img src="kerala pic/cards/theyyam.JPG" class="card-img-top" alt="theyyam">
+                          <div class="card-body bg-dark">
+                            <h5 class="card-title fw-bold text-white">Kannur-Kasargod-Bekal</h5>
+                            <p class="card-text text-primary">4-night 5-days</p>
+                            <p class="card-text text-white">Starting @ Rs 9,999/-</p>
+                            <a href="form.html" class="btn btn-warning fs-5 fw-bold"  target="_blank">Book Now</a>
+
+                          </div>
+                    </div>
+            </div>
+
+        </div>
+          
+
+      <!-- //....secondcard set -->
+
+      
+
+        <div class="row p-3">
+
+          <div class="col-sm-3">
+                  <div class="card border-3 border-success  " >
+                    <img src="kerala pic/cards/aana.jpg" class="card-img-top  " alt="family pic">
+                        <div class="card-body bg-dark">
+                          <h5 class="card-title fw-bold text-white"> Enchanting Family Tour</h5>
+                          <p class="card-text text-primary">3-night 4-days</p>
+                          <p class="card-text text-white">Starting @ Rs 8,999/-</p>
+                          <a href="form.html" class="btn btn-warning fs-5 fw-bold"  target="_blank">Book Now</a>
+
+                        </div>
+                  </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card border-3 border-success " >
+              <img src="kerala pic/cards/vala.jpg" class="card-img-top" alt="nature pic">
+                    <div class="card-body bg-dark">
+                      <h5 class="card-title fw-bold text-white">Rejuvenating Family Tour</h5>
+                      <p class="card-text text-primary">5-night 6-days</p>
+                      <p class="card-text text-white">Starting @ Rs 13,999/-</p>
+                      <a href="form.html" class="btn btn-warning fs-5 fw-bold"  target="_blank">Book Now</a>
+
+                    </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 ">
+                <div class="card border-3 border-success">
+                  <img src="kerala pic/cards/rain.jpg" class="card-img-top" alt="palakkad">
+                        <div class="card-body bg-dark">
+                          <h5 class="card-title fw-bold text-white">Malappuram-Palakkad</h5>
+                          <p class="card-text text-primary">2-night 3-days</p>
+                          <p class="card-text text-white">Starting @ Rs 5,999/-</p>
+                          <a href="form.html" class="btn btn-warning fs-5 fw-bold"  target="_blank">Book Now</a>
+
+                        </div>
+                </div>
+          </div>
+
+            <div class="col-sm-3 ">
+                  <div class="card border-3 border-success ">
+                    <img src="kerala pic/cards/water fall.jpg" class="card-img-top" alt="trissur">
+                          <div class="card-body bg-dark">
+                            <h5 class="card-title fw-bold text-white">Trissur-Palakkad-Athirapply</h5>
+                            <p class="card-text text-primary">4-night 5-days</p>
+                            <p class="card-text text-white">Starting @ Rs 10,999/-</p>
+                            <a href="form.html" class="btn btn-warning fs-5 fw-bold"  target="_blank">Book Now</a>
+
+                          </div>
+                  </div>
+            </div>
+      </div> 
+     
+
+
+
+       <!-- //....third set card -->
+
+
+     
+
+        <div class="row p-3">
+
+          <div class="col-sm-3">
+                  <div class="card border-3 border-success  " >
+                    <img src="kerala pic/cards/bridge.jpg" class="card-img-top  " alt="idukki">
+                          <div class="card-body bg-dark">
+                            <h5 class="card-title fw-bold text-white">Idukki-Munnar</h5>
+                            <p class="card-text text-primary">4-night 5-days</p>
+                            <p class="card-text text-white">Starting @ Rs 8,999/-</p>
+                            <a href="form.html" class="btn btn-warning fs-5 fw-bold"  target="_blank">Book Now</a>
+
+                          </div>
+                  </div>
+          </div>
+
+          <div class="col-sm-3">
+                    <div class="card border-3 border-success " >
+                      <img src="kerala pic/cards/Kathakali-1.jpg" class="card-img-top" alt="kalamandalam">
+                            <div class="card-body bg-dark">
+                              <h5 class="card-title fw-bold text-white">Kalamandalam-Malappuram</h5>
+                              <p class="card-text text-primary">3-night 5-days</p>
+                              <p class="card-text text-white">Starting @ Rs 7,999/-</p>
+                              <a href="form.html" class="btn btn-warning fs-5 fw-bold"  target="_blank">Book Now</a>
+
+                            </div>
+                    </div>
+            </div>
+
+          <div class="col-sm-3 ">
+                  <div class="card border-3 border-success ">
+                    <img src="kerala pic/cards/churam.jpg" class="card-img-top" alt="wayanad">
+                          <div class="card-body bg-dark">
+                            <h5 class="card-title fw-bold text-white">Kozhikode-Wayanad</h5>
+                            <p class="card-text text-primary">4-night 5-days</p>
+                            <p class="card-text text-white">Starting @ Rs 9,999/-</p>
+                            <a href="form.html" class="btn btn-warning fs-5 fw-bold"  target="_blank">Book Now</a>
+
+                          </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 ">
+                    <div class="card border-3 border-success ">
+                      <img src="kerala pic/cards/Malampuzha_Dam_Navas_10.jpg" class="card-img-top" alt="malampuzha">
+                            <div class="card-body bg-dark">
+                              <h5 class="card-title fw-bold text-white">Malampuzha-Eranakulam</h5>
+                              <p class="card-text text-primary">6-night 7-days</p>
+                              <p class="card-text text-white">Starting @ Rs 12,999/-</p>
+                              <a href="form.html" class="btn btn-warning fs-5 fw-bold"  target="_blank">Book Now</a>
+                            </div>
+                    </div>
+            </div>
+      </div> 
+       
+
+    
+
+       <!-- //...tourist packages -->
+
+  <div class=" p-5 ">
+      <h1 class="text-center pb-5 " style="color: rgb(71, 219, 26);">TOP CITY WISE TOURIST PACKAGES</h1>
+
+      <div class="row ">
+
+            <div class="col-sm-4">
+                    <div class="list-group text-center  fs-5 ">
+                      
+                      <a href="./top city wise packages/wayanad.html" target="_blank"><button type="button" class="list-group-item list-group-item-action  bg-dark text-white"  id="one"> WAYANAD TOUR PACKAGES</button></a><br>
+                      <a href="./top city wise packages/thekkadi.html" target="_blank"><button type="button" class="list-group-item list-group-item-action bg-dark text-white">THEKKADY TOUR PACKAGES</button></a><br>
+                      <a href="./top city wise packages/cochin.html" target="_blank"><button type="button" class="list-group-item list-group-item-action bg-dark text-white">COCHIN TOUR PACKAGES</button></a><br>
+                    </div>
+
+            </div>
+
+            <div class="col-sm-4">
+                    <div class="list-group text-center fs-5">
+                      <a href="./top city wise packages/munnar.html" target="_blank"><button type="button" class="list-group-item list-group-item-action bg-dark text-white" > MUNNAR TOUR PACKAGES</button></a><br>
+                      <a href="./top city wise packages/kumarakam.html" target="_blank"><button type="button" class="list-group-item list-group-item-action bg-dark text-white">KUMARAKOM TOUR PACKAGES</button></a><br>
+                      <a href="./top city wise packages/vagamon.html" target="_blank"><button type="button" class="list-group-item list-group-item-action bg-dark text-white">VAGAMON TOUR PACKAGES</button></a><br>
+                    </div>
+
+            </div>
+
+            <div class="col-sm-4">
+                    <div class="list-group text-center fs-5">
+                      <a href="./top city wise packages/kovalam.html" target="_blank"><button type="button" class="list-group-item list-group-item-action bg-dark text-white" >KOVALAM TOUR PACKAGES </button></a><br>
+                      <a href="./top city wise packages/trivandrum.html" target="_blank"><button type="button" class="list-group-item list-group-item-action bg-dark text-white">TRIVANDRUM TOUR PACKAGES</button></a><br>
+                      <a href="./top city wise packages/honeymoon.html" target="_blank"><button type="button" class="list-group-item list-group-item-action bg-dark text-white">KERALA HONEYMOON PACKAGES</button></a><br>
+                    </div>
+
+            </div>
+
+      </div>
+  </div>
+
+
+      <!-- //...district wice classification -->
+
+      
+        <!-- //...first section -->
+        <h1 style="color: rgb(71, 219, 26);" class="text-center pb-5">District  Tour Packages</h1>
+        
+
+        <div class="row pb-5 pt-5">
+
+                  <div class="col-sm-2">
+                          <div class="card border-3 border-warning " >
+                            <img src="kerala pic/district/kasrgod.jpg" class="card-img-top  " alt="kasargod">
+                            <a href="./District wise packages/kasargod.html" target="_blank" class="bg-dark"><h3 style="color: rgb(244, 244, 128);">Kasargod</h3></a>
+
+                          </div>
+                  </div>
+
+                 <div class="col-sm-2">
+                            <div class="card border-3 border-warning " >
+                              <img src="kerala pic/district/kannur.jpg" class="card-img-top  " alt="kannur">
+                              <a href="./District wise packages/kannur.html" target="_blank" class="bg-dark"><h3 style="color: rgb(244, 244, 128);">Kannur</h3></a>
+
+                            </div>
+
+                </div>
+
+                <div class="col-sm-2">
+                      <div class="card border-3 border-warning " >
+                        <img src="kerala pic/district/kozhikode.jpg" class="card-img-top  " alt="kozhikode">
+                        <a href="./District wise packages/kozhikode.html" target="_blank" class="bg-dark"><h3 style="color: rgb(244, 244, 128);">Kozhikode</h3></a>
+
+                      </div>
+
+               </div>
+
+               <div class="col-sm-2">
+                      <div class="card border-3 border-warning " >
+                        <img src="kerala pic/district/wayanad.jpg" class="card-img-top  " alt="wayanad">
+                        <a href="./District wise packages/wayanad.html" target="_blank" class="bg-dark"><h3 style="color: rgb(244, 244, 128);">Wayanad</h3></a>
+
+                      </div>
+
+              </div>
+
+              <div class="col-sm-2">
+                      <div class="card border-3 border-warning " >
+                        <img src="kerala pic/district/malapuram1.jpg" class="card-img-top  " alt="malappuram">
+                        <a href="./District wise packages/malappuram.html" target="_blank" class="bg-dark"><h3 style="color: rgb(244, 244, 128);">Malapuram</h3></a>
+
+                      </div>
+
+              </div>
+
+              <div class="col-sm-2">
+                        <div class="card border-3 border-warning " >
+                          <img src="kerala pic/district/Palakkad_Fort_5.jpg" class="card-img-top  " alt="palakkad">
+                          <a href="./District wise packages/palakkad.html" target="_blank" class="bg-dark"><h3 style="color: rgb(244, 244, 128);">Palakkad</h3></a>
+
+                        </div>
+
+              </div>
+
+
+
+      </div>
+  
+
+        <!-- //....secondsection -->
+
+
+        <div class="row pb-5 pt-5">
+      
+                <div class="col-sm-2">
+                        <div class="card border-3 border-warning " >
+                          <img src="kerala pic/district/trissure.jpg" class="card-img-top  " alt="trissur">
+                          <a href="./District wise packages/trissur.html" target="_blank" class="bg-dark"><h3 style="color: rgb(244, 244, 128);">Trissur</h3></a>
+
+                        </div>
+                </div>
+
+                <div class="col-sm-2">
+                            <div class="card border-3 border-warning " >
+                              <img src="kerala pic/district/eranakulam.jpg" class="card-img-top  " alt="eranakulam">
+                              <a href="./District wise packages/eranakulam.html" target="_blank" class="bg-dark"><h3 style="color: rgb(244, 244, 128);">Eranakulam</h3></a>
+
+                            </div>
+
+                </div>
+
+         
+
+               <div class="col-sm-2">
+                          <div class="card border-3 border-warning " >
+                            <img src="kerala pic/district/Idukki.jpeg" class="card-img-top  " alt="idukki">
+                            <a href="./District wise packages/idukki.html" target="_blank" class="bg-dark"><h3 style="color: rgb(244, 244, 128);">Idukki</h3></a>
+
+                          </div>
+
+               </div>
+
+                <div class="col-sm-2">
+                            <div class="card border-3 border-warning " >
+                              <img src="kerala pic/district/kottayam.jpg" class="card-img-top  " alt="kottayam">
+                              <a href="./District wise packages/kottayam.html" target="_blank" class="bg-dark"><h3 style="color: rgb(244, 244, 128);">Kottayam</h3></a>
+
+                            </div>
+
+                </div>
+
+                <div class="col-sm-2">
+                      <div class="card border-3 border-warning " >
+                        <img src="kerala pic/district/Alapuzha.jpg" class="card-img-top  " alt="alappuzha">
+                        <a href="./District wise packages/alapuzha.html" target="_blank" class="bg-dark"><h3 style="color: rgb(244, 244, 128);">Alapuzha</h3></a>
+
+                      </div>
+
+                </div>
+
+               <div class="col-sm-2">
+                      <div class="card border-3 border-warning " >
+                        <img src="kerala pic/district/pathanamthitta.jpg" class="card-img-top  " alt="pathaamthitta">
+                        <a href="./District wise packages/paathanamthitta.html" target="_blank" class="bg-dark"><h3 style="color: rgb(244, 244, 128);">Pathanamthitta</h3></a>
+
+                      </div>
+
+                </div>
+
+
+
+
+        </div>
+
+        <!-- //...third section -->
+        <div class="row pb-5 pt-5">
+
+                    <div class="col-sm-2">
+                    
+                    </div>
+
+                    <div class="col-sm-2">
+                      
+                    </div>
+
+                   <div class="col-sm-2">
+                        <div class="card border-3 border-warning " >
+                          <img src="kerala pic/district/kollam.jpg" class="card-img-top  " alt="kollam">
+                          <a href="./District wise packages/kollam.html" target="_blank" class="bg-dark"><h3 style="color: rgb(244, 244, 128);">Kollam</h3></a>
+
+                        </div>
+
+                  </div>
+
+                  <div class="col-sm-2">
+                        <div class="card border-3 border-warning " >
+                          <img src="kerala pic/district/trivandrum.jpg" class="card-img-top  " alt="trivandram">
+                          <a href="./District wise packages/trivandrum.html" target="_blank" class="bg-dark"><h3 style="color: rgb(244, 244, 128);">Trivandrum</h3></a>
+
+                        </div>
+
+                  </div>
+
+                    <div class="col-sm-2">
+                      
+                    </div>
+
+                    <div class="col-sm-2">
+                    
+                    </div>
+
+
+
+
+        </div>
+
+
+      <!-- //....applicayion form -->
+
+      <!-- <div class="container-fluid "> -->
+        
+
+        <h1 class="fs-1 text-primary">Book A Trip</h1>
+        <a href="form.html" target="_blank"><button style="border-radius: 10px; background-color: rgb(58, 113, 45); border: none; color: rgb(210, 210, 62);width: 100px;height: 50px;">Click Here</button></a>
+        
+      <!-- </div> -->
+    
+
+    
+
+         
+
+
+      
+
+        
+
+   
+
+     
+
+ <!-- //...FAQ -->
+ <div class=" pt-5 pb-5  text-center"> 
+  <h1  style="color: rgb(71, 219, 26);">FAQ</h1>
+  <!-- //..row starting -->
+  <div class="row">
+    <div class="col-sm-12 text-center ">
+
+            <div class="accordion accordion-flush " id="accordionFlushExample">
+              <div class="accordion-item ">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-white " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: rgb(94, 96, 93);">
+                    When is the best time to visit Kerala?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse text-white" data-bs-parent="#accordionFlushExample" style="background-color:rgb(44, 45, 42);">
+                  <div class="accordion-body">Winter in Kerala usually starts early in the month of October and lasts till February end. This period of the year is the best time to visit Kerala.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="background-color: rgb(94, 96, 93);">
+                    What are the popular tourist activities in Kerala?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse text-white" data-bs-parent="#accordionFlushExample" style="background-color: rgb(44, 45, 42);">
+                  <div class="accordion-body">Kerala offers an array of activities to its visitors. To name a few, there are wildlife safaris, water sports, trekking, beach activities, hill station visits, cultural tours, bamboo rafting, and the list goes on!</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="background-color: rgb(94, 96, 93);">
+                    Does Kerala have international airports?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse text-white" data-bs-parent="#accordionFlushExample" style="background-color: rgb(44, 45, 42);">
+                  <div class="accordion-body">Kerala has four international airports – Calicut International Airport, Cochin International Airport, Kannur International Airport, and Trivandrum International Airport. Also, almost all the major airlines in the world have direct flights to most of these airports.</div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+   </div>
+  <!-- //..end row -->
+ 
+
+ <!-- //..........footer -->
+
+ <div class=" pt-5 pb-5 ">
+
+      <div class="row">
+            <div class="col-md-4">
+              <h3 class="text-warning ">Tourism Destinations</h3>
+              <ul class="list-group " >
+                <a href="top city wise packages/wayanad.html" target="_blank"><li class="list-group-item text-white" style="background-color:rgb(29, 30, 29)">WAYANAD TOUR PACKAGES</li></a>
+                <a href="top city wise packages/munnar.html" target="_blank"><li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">MUNNAR TOUR PACKAGES</li></a>
+                <a href="top city wise packages/vagamon.html" target="_blank"><li class="list-group-item text-white" style="background-color:rgb(29, 30, 29)">VAGAMON TOUR PACKAGES</li></a>
+                <a href="top city wise packages/trivandrum.html" target="_blank"><li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">TRIVANDRUM TOUR PACKAGES</li></a>
+                <a href="top city wise packages/cochin.html" target="_blank"> <li class="list-group-item text-white" style="background-color:rgb(29, 30, 29)">COCHIN TOUR PACKAGES</li></a>
+              </ul>
+
+            </div>
+
+            <div class="col-md-4">
+              <h3 class="text-warning">Links</h3>
+              <ul class="list-group">
+                <a href="District wise packages/wayanad.html" target="_blank"><li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">Explore Wayanad</li></a>
+                <a href="District wise packages/idukki.html" target="_blank"><li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">Explore Hiils</li></a>
+                <a href="District wise packages/trivandrum.html" target="_blank"><li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">Explore Traditions</li></a>
+                <a href="District wise packages/eranakulam.html" target="_blank"><li class="list-group-item text-white" style="background-color:rgb(29, 30, 29)">Explore Cities</li></a>
+                <a href="District wise packages/alapuzha.html" target="_blank"><li class="list-group-item text-white" style="background-color:rgb(29, 30, 29)">Explore Backwaters</li></a>
+              </ul>
+
+            </div>
+
+            <div class="col-md-4">
+              <h3  class="text-warning">Contact Us</h3>
+              <ul class="list-group">
+                <li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">Tel: +91-6806140004</li>
+                <li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">Tel: +91-5686140007</li>
+                <li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">E-mail:</li>
+                <li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">explore-kerala@gmail.com</li>
+
+              
+              </ul>
+
+            </div>
+
+          
+      </div >
+
+  </div>
+
+        <div class=" pb-5 ">
+
+              <ul id="footer" style=" font-size: 20px;" >
+                <a href="https://www.facebook.com/" target="_blank"><li style="padding-right: 10px;">  <i class="bi bi-facebook bg-white" ></i></li></a>
+                
+                <a href="https://twitter.com/" target="_blank"><li style="padding-right: 10px;"><i class="bi bi-twitter bg-white"></i></li></a>
+                <a href="https://www.youtube.com/" target="_blank"><li><i class="bi bi-youtube  bg-white"></i></li></a>
+              </ul>
+
+          </div>
+
+<!-- </div>
+
+</div> -->
+
+</div>
+
+
+
+
+
+
+  
+
+
+
+      <script src="miniform.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    
+</body>
+</html>

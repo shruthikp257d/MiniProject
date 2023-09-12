@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alapuzha</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../miniproject.css">
+
+</head>
+<body>
+
+    <!-- ..///Navbar -->
+
+    <div class="container-fluid">
+    
+    <div class="container-fluid  ">
+
+    
+        <nav class="navbar navbar-expand-lg  fw-bold fs-5 ">
+            <div class="container-fluid">
+              
+              <img src="../kerala pic/Logo 4.png" style="width: 100px; height: 60px;" class="ms-5">
+              
+              <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation " id="btn" >
+                <span class="navbar-toggler-icon" ></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 
+                  <li class="nav-item">
+                    <a class="nav-link active text-white ms-5" aria-current="page" href="../miniproject.html"><span style="font-family:monospace;">Home</span></a>
+                  </li>
+                  
+                  <li class="nav-item dropdown ms-5 ">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span style="font-family:monospace;">Tour Packages</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../top city wise packages/wayanad.html" target="_blank">Wayanad Tour Packages</a></li>
+                      <li><a class="dropdown-item" href="../top city wise packages/thekkadi.html" target="_blank">Thekkady Tour Packages</a></li>
+                      <li><a class="dropdown-item" href="../top city wise packages/cochin.html" target="_blank">Cochin Tour Packages</a></li>
+                      <li><a class="dropdown-item" href="../top city wise packages/munnar.html" target="_blank">Munnar Tour Packages</a></li>
+                      <li><a class="dropdown-item" href="../top city wise packages/kumarakam.html" target="_blank">Kumarakam Tour Packages</a></li>
+                      <li><a class="dropdown-item" href="../top city wise packages/vagamon.html" target="_blank">Vagamon Tour Packages</a></li>
+                      <li><a class="dropdown-item" href="../top city wise packages/kovalam.html" target="_blank">Kovalam Tour Packages</a></li>
+                      <li><a class="dropdown-item" href="../top city wise packages/trivandrum.html" target="_blank">Trivandrum Tour Packages</a></li>
+    
+    
+    
+    
+    
+                    </ul>
+                  </li>
+    
+                   <li class="nav-item ms-5">
+                    <a class="nav-link text-white" href="../mustvisit_place.html" target="_blank"><span style="font-family:monospace;">Must Visit Places</span></a>
+                  </li>
+    
+                  <li class="nav-item ms-5">
+                    <a class="nav-link text-white" href="../honeymoonpackage.html" target="_blank"><span style="font-family:monospace;">Honeymoon Packages</span></a>
+                  </li>
+    
+                  
+                  
+                </ul>
+    
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary me-5 con" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: rgb(6, 91, 27); border-color: black; font-size: 20px;" id="con">
+                   CONTACT
+                </button>
+    
+              <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title fs-7 " id="staticBackdropLabel"><span style="font-family: monospace; color:blue; font-size: 30px;">CONTACT US</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form onsubmit="return contact()"   action="../miniproject.html">
+    
+    
+                          <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name1">
+                            <!-- <label id="text_a" style="color: red; visibility: hidden;">Invalid</label> -->
+    
+                          </div>
+                          <div class="mb-3">
+                            <label for="Email1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email1" aria-describedby="emailHelp">
+                            <!-- <label id="text_b" style="color: red; visibility: hidden;">Invalid</label> -->
+    
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+    
+                            <input type="number" class="form-control" id="number1">
+                            <!-- <label id="text_c" style="color: red; visibility: hidden;">Invalid</label> -->
+    
+                          </div>
+    
+                          <label for="message" class="form-label">Your Message</label>
+    
+                          <div class="form-floating ">
+                                                       
+                            <textarea id="message1" class="form-control mb-2" style=" height: 40px;" placeholder="Additional Information:"></textarea>
+                            <!-- <label id="text_d" style="color: red; visibility: hidden;">Invalid</label> -->
+    
+                          </div>
+                         
+                          <button type="submit" class="btn btn-primary " onclick="contact()">Submit</button>
+                          <!-- <input type="submit" value="submit" id="btn" class=" bg-primary"> -->
+    
+                        </form>
+    
+    
+                        <h5 class="mt-4">TELEPHONIC CONTACTS</h5>
+    
+                        <h6>
+                          Tel: +91-7606140809<br>
+                          Tel: +91-6848103025</h6>
+    
+                          <h5>Email Contact:</h5>
+                          <h6>explorekerala@gmail.com</h6>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+    
+             
+    
+    
+               
+              
+              </div>
+            </div>
+          </nav>
+      </div>
+      
+    <div class="container-fluid text-white text-center">
+
+        <h1 style="color: rgb(46, 196, 9);">Alappuzha</h1>
+        <p>Alappuzha (or Alleppey) is a city on the Laccadive Sea in the southern Indian state of Kerala. It's best known for houseboat cruises along the rustic Kerala backwaters, a network of tranquil canals and lagoons. Alappuzha Beach is the site of the 19th-century Alappuzha Lighthouse. The city's Mullakkal Temple features a traditional design. Punnamada Lake's snake boat races are a well-known annual event. </p>
+        <ul style="color: rgb(158, 225, 158);">
+            <li>Alappuzha Light House</li>
+            <li>Alappuzha Beach</li>
+            <li>Mannarsala Nagaraja Temple</li>
+            <li>Alappuzha Backwaters</li>
+            <li>St. Andrew's Basilica Arthunkal</li>
+            <li>Mullakkal Rajeshwari Temple</li>
+            <li>Edathua Church</li>
+            <li>Chakkulathukavu Temple</li>
+            <li>Vembanad Lake</li>
+            <li>Karumadi</li>
+            <li>Pathiramanal</li>
+            <li>More</li>
+            
+        </ul>
+        <a href="../form.html" target="_blank" ><button style="background-color: rgb(213, 91, 91); width: 150px; height: 50px; border-radius: 20px;color: antiquewhite; border: none; font-size: 20px;" >Book Now</button></a>
+
+
+
+    </div>
+
+    <div class="container-fluid pt-5 pb-5 ">
+
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="text-warning ">Tourism Destinations</h3>
+            <ul class="list-group " >
+              <a href="../top city wise packages/wayanad.html" target="_blank"><li class="list-group-item text-white" style="background-color:rgb(29, 30, 29)">WAYANAD TOUR PACKAGES</li></a>
+              <a href="../top city wise packages/munnar.html" target="_blank"><li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">MUNNAR TOUR PACKAGES</li></a>
+              <a href="../top city wise packages/vagamon.html" target="_blank"><li class="list-group-item text-white" style="background-color:rgb(29, 30, 29)">VAGAMON TOUR PACKAGES</li></a>
+              <a href="../top city wise packages/trivandrum.html" target="_blank"><li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">TRIVANDRUM TOUR PACKAGES</li></a>
+              <a href="../top city wise packages/cochin.html" target="_blank"> <li class="list-group-item text-white" style="background-color:rgb(29, 30, 29)">COCHIN TOUR PACKAGES</li></a>
+            </ul>
+      
+          </div>
+      
+          <div class="col-md-4">
+            <h3 class="text-warning">Links</h3>
+            <ul class="list-group">
+              <a href="../District wise packages/wayanad.html" target="_blank"><li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">Explore Wayanad</li></a>
+              <a href="../District wise packages/idukki.html" target="_blank"><li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">Explore Hiils</li></a>
+              <a href="../District wise packages/trivandrum.html" target="_blank"><li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">Explore Traditions</li></a>
+              <a href="../District wise packages/eranakulam.html" target="_blank"><li class="list-group-item text-white" style="background-color:rgb(29, 30, 29)">Explore Cities</li></a>
+              <a href="../District wise packages/alapuzha.html" target="_blank"><li class="list-group-item text-white" style="background-color:rgb(29, 30, 29)">Explore Backwaters</li></a>
+            </ul>
+      
+          </div>
+      
+          <div class="col-md-4">
+            <h3  class="text-warning">Contact Us</h3>
+            <ul class="list-group">
+              <li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">Tel: +91-6806140004</li>
+              <li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">Tel: +91-5686140007</li>
+              <li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">E-mail:</li>
+              <li class="list-group-item text-white" style="background-color: rgb(29, 30, 29)">explore-kerala@gmail.com</li>
+      
+             
+            </ul>
+      
+          </div>
+      
+         
+        </div >
+      
+      
+      
+      
+       </div>
+      
+       <div class="container-fluid pb-5 ">
+      
+        <ul id="footer" style=" font-size: 20px;" >
+          <a href="https://www.facebook.com/" target="_blank"><li style="padding-right: 10px;">  <i class="bi bi-facebook bg-white" ></i></li></a>
+          
+          <a href="https://twitter.com/" target="_blank"><li style="padding-right: 10px;"><i class="bi bi-twitter bg-white"></i></li></a>
+          <a href="https://www.youtube.com/" target="_blank"><li><i class="bi bi-youtube  bg-white"></i></li></a>
+        </ul>
+      
+       </div>
+
+
+    </div>
+  
+  
+      
+  
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    
+</body>
+</html>
